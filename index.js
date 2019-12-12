@@ -18,6 +18,11 @@ db.sync({ force: false });
 //Middleware
 app.use(express.json());
 
+//Test Index
+app.get('/', (req,res) => {
+    res.send('There is a index page');
+})
+
 //USER ROUTES
 app.use('/api/user/', authRoute);
 app.use('/api/category/',categoryRoute);
