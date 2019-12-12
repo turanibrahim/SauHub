@@ -30,5 +30,5 @@ app.use('/api/category/',categoryRoute);
 
 
 
-var port_number = server.listen(process.env.PORT || 3000);
-app.listen(port_number, console.log('server started on port' + port_number));
+var port_number = process.env.PORT || 3000;
+app.listen(port_number, console.log('server started on port ' + port_number));
