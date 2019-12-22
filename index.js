@@ -3,6 +3,8 @@ const db = require('./config/database');
 const dotenv = require('dotenv');
 const authRoute = require('./routes/auth');
 const categoryRoute = require('./routes/category');
+const postRoute = require('./routes/post');
+
 const app = express();
 
 //ENV config
@@ -26,6 +28,7 @@ app.get('/', (req,res) => {
 //USER ROUTES
 app.use('/api/user/', authRoute);
 app.use('/api/category/',categoryRoute);
+app.use('/api/post/',postRoute);
 
 
 
