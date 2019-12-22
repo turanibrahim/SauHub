@@ -6,7 +6,7 @@ const Category = require('../Models/Category');
 router.get('/' , verify ,(req ,res ) => {
     Category.findAll().then( category => {
         res.json({
-            data: category,
+            category,
         })
     });
 });
