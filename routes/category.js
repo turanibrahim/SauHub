@@ -3,7 +3,7 @@ const verify = require('./verifyToken');
 const db = require('../config/database');
 const Category = require('../Models/Category');
 
-router.get('/' , verify ,(req ,res ) => {
+router.get('/'  ,(req ,res ) => {
     Category.findAll().then( category => {
         res.json({
             category,
