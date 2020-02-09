@@ -105,3 +105,9 @@ dist
 
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
+
+# DB Configs
+/config/database.js
+
+#ENV file
+.env
